@@ -1,0 +1,87 @@
+.glass-element {
+  background: #d9e4ec;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.guideline-button {
+  border-color: #2ECC71;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: inline-block;
+  /* Changed display property */
+  margin-right: 10px;
+  /* Optional: Add margin between cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Aligns items with equal space between them */
+}
+
+.guideline-button:hover {
+  transform: translateY(-5px);
+  border-color: #3498DB;
+  box-shadow: 0 8px 12px rgba(40, 128, 185, 0.5);
+}
+
+
+
+
+.step-title {
+  cursor: pointer;
+}
+
+.step-content {
+  display: none;
+  transition: all 0.1s ease;
+}
+
+.step-content.visible {
+  display: block;
+}
+
+.step-content li {
+  opacity: 0;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.step-content.visible li {
+  animation-name: fadeInRight;
+}
+
+
+body{
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #D9E4EC;
+}
+
+.main {
+
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.container {
+  /* display: grid;
+  grid-template-columns: 22.5% 77.5%; */
+  height: 100vh;
+  min-width:100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes up the full viewport height */
+}
+
+.container-1 > * {
+  flex-shrink: 0; /* Prevent elements from shrinking */
+}
+
+.container-1 > .container {
+  flex-grow: 1; /* Allow the main content to grow and fill the remaining space */
+}
