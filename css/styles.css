@@ -15,24 +15,22 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-p{
-  line-height: 1000%;
-}
 
 /* HERO PAGE  */
 
-#page1 {    
+#page1 {  
+  top: 0%;
   width: 100%;
   height: 110%;  
   background-color: #111;   
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 20px;
   border-bottom-left-radius: 25px; 
-  border-bottom-right-radius: 25px;
-
+  border-bottom-right-radius: 25px;    
+  position: relative;
 }
 
 .title-container {
@@ -60,7 +58,10 @@ p{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   gap: 10px;
+  position: absolute;
+  bottom: 35%;
 }
 
 .guideline-button1, .guideline-button2 {
@@ -77,18 +78,36 @@ p{
 .guideline-button1:hover, .guideline-button2:hover {
   transform: translateY(-5px);
   border-color: #3498DB;
-  box-shadow: 0 8px 12px rgba(40, 128, 185, 0.5);
+  box-shadow: 20px 20px 12px rgba(40, 128, 185, 0.5);
 }
 
+/* NAVBAR  */
 
-/* #page1 {
-  height: 100%;
-  width: 100%;
-  background-color: wheat;
-  display: flex;
-  justify-content: center;
+.nav-bar{  
+  display: inline-flex;
+  flex-direction: row;
   align-items: center;
-} */
+  color: #D9E4EC;
+  gap: 40px;
+  position: absolute;
+  bottom: 13%;
+}
+
+.nav-item{
+  font-size: 1.5rem;
+  transition: all 0.3s ease ;
+}
+
+.nav-item:hover{
+  text-shadow: 5px 5px 10px rgba(40, 128, 185, 0.5);
+  font-size: 2.5rem;
+  
+}
+
+.vertical-ruler {
+  border-left: 2px solid #D9E4EC;
+  height: 40px;    
+}
 
 /* ABOUT PROGRAM */
 
@@ -101,6 +120,7 @@ p{
   flex-direction: column;
   justify-content:space-evenly;
   align-items: center;
+  box-shadow: 0 0px 12px rgba(40, 128, 185, 0.5) inset;
 }
 
 /* TIMELINE */
