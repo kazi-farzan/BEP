@@ -1,7 +1,19 @@
 
-.font-sans-light {
+.fira-sans-light {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 100;
+}
+
+.fira-sans-regular {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 900;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+
 }
 
 .poppins-regular {
@@ -25,6 +37,9 @@
   color: #2C3E50;
 }
 
+.font-color-green{
+  color: #3EEB57 ;
+}
 
 .nav-link {
   color: #2C3E50;
