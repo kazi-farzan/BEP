@@ -58,6 +58,60 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to create a ripple effect on button hover
+    function createRipple(event, button) {
+        const ripple = document.createElement("span");
+        ripple.classList.add("ripple");
+        button.appendChild(ripple);
+
+        const diameter = Math.max(button.clientWidth, button.clientHeight);
+        const radius = diameter / 2;
+
+        const rippleX = event.clientX - button.getBoundingClientRect().left - radius;
+        const rippleY = event.clientY - button.getBoundingClientRect().top - radius;
+
+        ripple.style.width = ripple.style.height = `${diameter}px`;
+        ripple.style.left = `${rippleX}px`;
+        ripple.style.top = `${rippleY}px`;
+
+        gsap.to(ripple, {
+            opacity: 0,
+            duration: 0.5,
+            ease: "power2.out",
+            onComplete: () => {
+                ripple.remove();
+            }
+        });
+    }
+
+    // Buttons
+    const buttons = document.querySelectorAll('.guideline-button1, .guideline-button2');
+
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', () => {
+            // Change background color with ripple effect
+            createRipple(event, button);
+            gsap.to(button, {
+                backgroundColor: "#D9E4EC",
+                color: "#111",
+                borderColor: "#D9E4EC",
+                duration: 0.3
+            });
+        });
+
+        button.addEventListener('mouseleave', () => {
+            gsap.to(button, {
+                backgroundColor: "#111",
+                color: "#D9E4EC",
+                borderColor: "#3EEB57",
+                duration: 0.3
+            });
+        });
+    });
+});
+
+
 
 
 // let navTl = gsap.timeline({ paused: true });

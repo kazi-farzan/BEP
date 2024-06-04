@@ -97,3 +97,16 @@ body {
   fill:#3498DB;
 }
 
+
+/* ABOUT PAGE  */
+
+#page5{
+  flex-grow: 1;
+  height: 50%;
+  width: 100%;
+  background-color: #2ECC71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

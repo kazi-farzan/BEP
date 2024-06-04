@@ -43,7 +43,7 @@
     white-space: nowrap;
   }
   
-  .button-container {
+.button-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -51,11 +51,10 @@
     align-items: center;
     align-content: stretch;
     gap: 10px;  
-    
-  }
-  
-  .guideline-button1, .guideline-button2 {
-  
+}
+
+.guideline-button1,
+.guideline-button2 {
     display: block;
     align-self: auto;
   
@@ -70,15 +69,25 @@
     border: 5px solid #3EEB57;  
     padding: 10px 20px;
     background-color: #111;
-    transition: all 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
      
-  }
-  
-  .guideline-button1:hover, .guideline-button2:hover {
+}
+
+.guideline-button1:hover,
+.guideline-button2:hover {
     transform: translateY(-5px);
-    border-color: #3498DB;
-    box-shadow: 0px 20px 12px rgba(40, 128, 185, 0.5);
-  }
+    /* box-shadow: 0px 20px 12px rgba(40, 128, 185, 0.5); */
+}
+
+/* Ripple Effect */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: linear-gradient(90deg, #43cea2, #185a9d);
+    pointer-events: none;
+    transform: scale(0);
+}
+
   
   /* NAVBAR  */
   
