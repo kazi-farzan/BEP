@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     // Function to create a ripple effect on button hover
-    function createRipple(event, button) {
+    function createRipple(e, button) {
         const ripple = document.createElement("span");
         ripple.classList.add("ripple");
         button.appendChild(ripple);
@@ -68,8 +68,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const diameter = Math.max(button.clientWidth, button.clientHeight);
         const radius = diameter / 2;
 
-        const rippleX = event.clientX - button.getBoundingClientRect().left - radius;
-        const rippleY = event.clientY - button.getBoundingClientRect().top - radius;
+        const rect = button.getBoundingClientRect();
+        const rippleX = e.clientX - rect.left - radius;
+        const rippleY = e.clientY - rect.top - radius;
 
         ripple.style.width = ripple.style.height = `${diameter}px`;
         ripple.style.left = `${rippleX}px`;
@@ -89,9 +90,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll('.guideline-button1, .guideline-button2');
 
     buttons.forEach(button => {
-        button.addEventListener('mouseenter', () => {
+        button.addEventListener('mouseenter', (e) => {
             // Change background color with ripple effect
-            createRipple(event, button);
+            createRipple(e, button);
             gsap.to(button, {
                 backgroundColor: "#D9E4EC",
                 color: "#111",
@@ -110,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
 
 
 

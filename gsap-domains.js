@@ -1,5 +1,5 @@
 gsap.from("#page4 #grid1",{
-    rotate: 720,  
+    rotate: 360,  
     duration:2, 
     scrollTrigger:{
       trigger:"#page4 #grid1",
@@ -23,7 +23,7 @@ gsap.from("#page4 #grid1",{
     }
   });
   gsap.from("#page4 #grid1 .box-small",{
-    rotate: -720,
+    rotate: -360,
     duration:2, 
     scrollTrigger:{
       trigger:"#page4 #grid1 .box-small",

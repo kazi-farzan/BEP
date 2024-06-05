@@ -1,0 +1,91 @@
+#page5 {
+    background-image: url("Designer.jpeg");
+    background-size:cover;    
+}
+
+.glassmorph {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);    
+}
+
+#benefits {
+    display: flex;
+    flex-direction: column;    
+    justify-content: start;
+    align-items: stretch;
+    height: 100vh;
+    width: 100%;
+}
+
+#benefit-title {
+    display: flex;
+    flex-grow: .2;
+    width: 100%;    
+    border: 4px solid #111;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.benefit h3 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.benefit-content {
+    width: 100%;
+    flex-grow: 5;    
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s, color 0.5s;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.benefit-content.hidden {
+    display: none;
+}
+
+.benefit-content.visible {
+    display: flex;
+}
+
+.benefit-content ul {
+    list-style:circle;
+    padding: 0;
+}
+
+.benefit-content li {
+    margin: 1rem 0;
+    opacity: 0; /* Initially hidden */
+    text-align: left;
+}
+
+.benefits-nav-item {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #D9E4EC, #D9E4EC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 33.33%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #benefits {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+}
