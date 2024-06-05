@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         item.addEventListener('mouseenter', () => {
             gsap.to(item, {
                 backgroundImage: "linear-gradient(90deg, #43cea2, #185a9d)",
-                fontSize: "3rem",
+                fontSize: "1.75rem",
                 duration: 0.3,
                 ease: "power1.inOut",
                 onUpdate: () => {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
         item.addEventListener('mouseleave', () => {
             gsap.to(item, {
                 backgroundImage: "linear-gradient(90deg, #D9E4EC, #D9E4EC)",     
-                fontSize: "2rem",           
+                fontSize: "1.35rem",           
                 duration: 0.3,
                 ease: "power1.inOut",
                 onUpdate: () => {

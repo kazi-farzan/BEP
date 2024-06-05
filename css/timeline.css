@@ -1,0 +1,88 @@
+/* TIMELINE */
+#page3 {
+    flex-grow: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: #D9E4EC;
+    display: flex;
+    justify-content: center;     
+}
+
+#timeline{
+    margin-top: 20rem;
+    display: flex;
+}
+
+.timeline-title{
+    font-size: 10rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    line-height: 1;
+    color:#26AE60;
+    text-align: left;
+    margin-bottom: 10rem;
+    margin-left: 30rem;
+}
+
+.timeline-card-stack{
+    margin-top: 20rem; 
+    margin-right: 10rem;   
+    font-size: 2.5rem;
+    height: 55vh;
+}
+
+.timeline-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;    
+    border-radius: 4rem;
+    border: 1rem solid #26AE60;
+    background-color: #D9E4EC;
+    max-width: 100%;
+    min-width: 33.33%;
+    min-height: 25%;
+    align-items: center;
+    /* text-align: center; */
+    padding: 2.5rem; /* 40px */
+    position: relative; /* Make this card a positioned ancestor */
+}
+
+.timeline-card-title {
+    color: #26AE60;
+    font-size: 4rem;
+}
+
+.timeline-card-content {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #111;
+    font-size: 3rem;
+    text-align: center;
+    word-wrap: normal;
+    flex-grow: 2; /* Allows the content to grow and take up space */
+}
+
+.timeline-card-hr {
+    width: 80%; /* Set the desired width here */
+    border: 1px solid #26AE60;
+    position: absolute; /* Position it absolutely */
+    top: 10rem; /* Adjust this value as needed to place the hr */
+    left: 50%;
+    transform: translateX(-50%); /* Center the hr horizontally */
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 60px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 2 / 2 / 3 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 2 / 4 / 3 / 5; }
+    .div5 { grid-area: 1 / 5 / 2 / 6; }

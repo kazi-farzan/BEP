@@ -30,7 +30,7 @@
 /* styles.css */
 .hero-title1 {    
     white-space: nowrap;    
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 100;  
     background: linear-gradient(90deg, #D9E4EC, #D9E4EC);
     -webkit-background-clip: text;
@@ -60,9 +60,9 @@
   display: block;
   align-self: auto;  
   /* Font Style  */
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   font-weight: 200;
-  line-height: 2.5rem;
+  line-height: 1.5rem;
   color: #D9E4EC;
   white-space: nowrap; 
 
@@ -106,8 +106,9 @@
 
 .nav-item {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.35rem;
   font-weight: 400;
+  white-space: nowrap;
   background: linear-gradient(90deg, #D9E4EC, #D9E4EC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

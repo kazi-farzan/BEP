@@ -1,60 +1,50 @@
 /* ABOUT PROGRAM */
 
 #page2 {
-    flex-grow: 1;
     height: 100vh;
     width: 100%;
     background-color: #D9E4EC;
     color: #111;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
-    align-items: center;
+    justify-content: space-evenly;
     box-shadow: 0 0px 12px rgba(40, 128, 185, 0.5) inset;
-  }
-  
-  #about-program h2{
-    font-size: 10rem;
+}
+
+#about-program {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+#about-program h2 {
+    margin-top: 10rem;
+    font-size: 5rem;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     line-height: 1;
-    color:#26AE60;
-    text-align: center;
-    margin-bottom: 10rem;
-  }
-  
-  .about-program-content{
+    color: #26AE60;
+}
+
+.about-program-content {
     padding-left: 10rem;
     padding-right: 10rem;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-  }
-  
-  .about-program-content p{ 
-    text-align: justify;
-    font-size: 2.5rem/* 30px */;
-    line-height: 5rem/* 36px */;
-    margin-bottom: 0.75rem/* 12px */;    
-  
-  }
-  
-  .bolded-content{ 
-    font-weight: 600;  
-    
-  }
-  
-  .highlighted-content{ 
-    font-size: 4rem/* 30px */;
-    line-height: 5rem/* 36px */;
-    font-weight: 300; 
-    
-  }
+    margin-top: 2rem;
+}
 
-  .about-program-card-stack {
+.about-program-content p {
+    text-align: justify;
+    font-size: 1.5rem; /* 30px */
+    line-height: 2rem; /* 36px */
+    margin-bottom: 0.75rem; /* 12px */
+}
+
+.about-program-card-stack {
     display: flex;
     flex-direction: row;
-    font-size: 2.5rem;
-    height: 30vh;
+    font-size: 2rem;
+    height: 35vh;
 }
 
 .card {
@@ -64,41 +54,50 @@
     margin: 1rem;
     border-radius: 4rem;
     background: rgb(26,38,46);
-background: linear-gradient(152deg, rgba(26,38,46,1) 0%, rgba(17,17,17,1) 100%);
+    background: linear-gradient(152deg, rgba(26,38,46,1) 0%, rgba(17,17,17,1) 100%);
     max-width: 33.33%;
     min-width: 33.33%;
     align-items: center;
     text-align: center;
-    padding: 2.5rem; /* 40px */
-    position: relative; /* Make this card a positioned ancestor */
+    padding: 1.5rem; /* 40px */
 }
 
 .card-title {
     color: #26AE60;
-    font-size: 4rem;
+    font-size: 2.25rem;
 }
 
 .card-content {
-    margin-top: 4rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     padding-left: 10%;
     padding-right: 10%;
     color: #D9E4EC;
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: center;
     word-wrap: normal;
-    flex-grow: 2; /* Allows the content to grow and take up space */
 }
 
-.card-hr {
-    width: 80%; /* Set the desired width here */
-    border: 1px solid #D9E4EC;
-    position: absolute; /* Position it absolutely */
-    top: 10rem; /* Adjust this value as needed to place the hr */
-    left: 50%;
-    transform: translateX(-50%); /* Center the hr horizontally */
+.card-text-highlight {
+    font-size: 4rem;
 }
 
-.card-text-highlight{
-    font-size: 8rem;
+.card-text-long {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #D9E4EC;
+    text-align: center;
 }
+
+.about-program-card-list {
+    font-size: 1rem;
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+
