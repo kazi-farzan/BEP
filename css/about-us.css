@@ -29,12 +29,12 @@
 }
 
 .learn-more{
-  color: #111;
-  padding-left: 10rem;
+  color: white;
+  padding-left: 5rem;
   padding-right: 10rem;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
   
@@ -46,13 +46,13 @@
   /* Font Style  */
   font-size: 2rem;
   line-height: 2.5rem;
-  color: #111;
+  color: white;
   white-space: nowrap; 
   align-items: center;
 
   /* Button Style  */
   border-radius: 50px;
-  border: 5px solid #111;  
+  border: 5px solid #D9E4EC;  
   padding: 10px 20px;
   background-color: #2ECC71;
   transition: transform 0.3s, box-shadow 0.3s;

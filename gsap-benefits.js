@@ -3,32 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const benefitSections = document.querySelectorAll('.benefit-content');
 
     // GSAP animation for the nav items
-    navItems.forEach(item => {
-        item.addEventListener('mouseenter', () => {
-            gsap.to(item, {
-                backgroundImage: "linear-gradient(90deg, #43cea2, #185a9d)",                
-                duration: 0.3,
-                ease: "power1.inOut",
-                onUpdate: () => {
-                    item.style.webkitBackgroundClip = 'text';
-                    item.style.webkitTextFillColor = 'transparent';
-                }
-            });
-        });
-
-        item.addEventListener('mouseleave', () => {
-            gsap.to(item, {
-                backgroundImage: "linear-gradient(90deg, #D9E4EC, #D9E4EC)",     
-                fontSize: "5rem",           
-                duration: 0.3,
-                ease: "power1.inOut",
-                onUpdate: () => {
-                    item.style.webkitBackgroundClip = 'text';
-                    item.style.webkitTextFillColor = 'transparent';
-                }
-            });
-        });
-
+    navItems.forEach(item => {        
+        
         item.addEventListener('click', () => {
             const targetBenefit = item.getAttribute('data-benefit');
             benefitSections.forEach(section => {

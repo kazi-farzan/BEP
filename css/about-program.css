@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    box-shadow: 0 0px 12px rgba(40, 128, 185, 0.5) inset;
+    /* box-shadow: 0 0px 12px rgba(40, 128, 185, 0.5) inset; */
 }
 
 #about-program {
@@ -79,7 +79,7 @@
 }
 
 .card-text-highlight {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .card-text-long {
