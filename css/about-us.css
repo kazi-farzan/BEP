@@ -49,16 +49,23 @@
   color: white;
   white-space: nowrap; 
   align-items: center;
+  text-align: center;
 
   /* Button Style  */
   border-radius: 50px;
   border: 5px solid #D9E4EC;  
   padding: 10px 20px;
-  background-color: #2ECC71;
-  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #2ECC71;   
+  
+  /* Transition Effects */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.5s ease, border-color 0.2s ease, background-image 0.5s ease;
 }
 
 .about-us-button:hover {
   transform: translateY(-5px);
-  /* box-shadow: 0px 20px 12px rgba(40, 128, 185, 0.5); */
+  background-color: #2880B9; 
+  border-color: #2880B9; 
 }
+
+
+
