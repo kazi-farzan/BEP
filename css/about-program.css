@@ -18,6 +18,7 @@
 
 #about-program h2 {
     margin-top: 10rem;
+    margin-left: 5rem;
     font-size: 5rem;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
@@ -45,26 +46,31 @@
     flex-direction: row;
     font-size: 2rem;
     height: 35vh;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    margin: 1rem;
+    justify-content: start;    
+    border-width: 2px;
+    border-color: #2880B9;
     border-radius: 4rem;
-    background: rgb(26,38,46);
-    background: linear-gradient(152deg, rgba(26,38,46,1) 0%, rgba(17,17,17,1) 100%);
+    border-style: dotted;
+    background-color: #D9E4EC;
     max-width: 33.33%;
-    min-width: 33.33%;
+    min-width: 30%;
     align-items: center;
     text-align: center;
-    padding: 1.5rem; /* 40px */
+    padding: 1.5rem; /* 40px */ 
+    margin: 2rem;   
 }
 
 .card-title {
     color: #26AE60;
     font-size: 2.25rem;
+    font-weight: 400;
 }
 
 .card-content {
@@ -72,7 +78,7 @@
     margin-bottom: 1rem;
     padding-left: 10%;
     padding-right: 10%;
-    color: #D9E4EC;
+    color: #111;
     font-size: 1.5rem;
     text-align: center;
     word-wrap: normal;
@@ -85,9 +91,9 @@
 .card-text-long {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
-    padding-left: 10%;
-    padding-right: 10%;
-    color: #D9E4EC;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #111;
     text-align: center;
 }
 
@@ -96,7 +102,7 @@
     list-style-type: circle;
     padding: 0;
     margin: 0;
-    text-align: center;
+    /* text-align: center; */
     line-height: 1.8rem;
 }
 
