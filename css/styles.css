@@ -17,6 +17,10 @@ body {
   flex-direction: column;  
 }
 
+a{
+  text-decoration:none;
+}
+
 #page-is-flex{  
   flex-grow: 5;
   flex-direction: column;  

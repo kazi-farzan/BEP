@@ -1,7 +1,7 @@
-  .page3 {
+  #page3 {
     width: 100%;
     height: 110vh;
-    background-color: #111;
+    background-color: #2C3E50;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,13 +19,13 @@
     
   }
   
-  .page3 h2 {
+  #page3 h2 {
     font-family: "Poppins", sans-serif;
-    font-size: 100;
+    font-weight: 500;
     color: #2ECC71;
     font-size: 5rem;
     align-self: flex-start;
-    margin-left: 5rem;
+    margin-left: 12rem;
     margin-top: 5rem;
   }
   
@@ -120,7 +120,7 @@
     border-left: 4rem;
     border-color: #3498DB;
   }
-  
+
   .svg circle {
     transition: fill 0.5s, r 0.5s;
   }
