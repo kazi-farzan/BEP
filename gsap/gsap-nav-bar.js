@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    const title = document.querySelector('.hero-title1');
+    const title = document.querySelector('.nav-bar-logo');
     const navItems = document.querySelectorAll('.nav-item');    
     
     // GSAP animation for the hero title
