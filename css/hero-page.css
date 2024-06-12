@@ -2,6 +2,7 @@
     height: 100vh;
     width: 100%;
     background-color: #2C3E50;    
+    /* background-color: #111; */
     font-family: 'Fira Sans', sans-serif;
     z-index: 1;
 }
@@ -110,7 +111,7 @@
     border-radius: 50px;
     border: 4px solid #2ECC71;  
     padding: 10px 20px;
-    background-color: #2C3E50; 
+    background-color: transparent; 
     margin-left: 1rem; 
     margin-right: 1rem; 
 
@@ -130,9 +131,9 @@
 
 .lp-button1:hover, .lp-button2:hover, .lp-button3:hover {
     transform: translateY(-5px);
-    background-color: #D9E4EC; 
-    border-color: #D9E4EC; 
+    background-color: #2880B9; 
+    border-color: #2880B9; 
     scale: 1.1;
-    color: #2880B9;
+    color: #D9E4EC;
 }
 

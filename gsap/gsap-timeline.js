@@ -51,9 +51,27 @@ document.addEventListener("DOMContentLoaded", function() {
             gsap.to(item, {color: '#2ECC71', duration: 0.5, ease: 'power2.inOut'}); // Change text color of clicked button with ease animation
             activeButton = item;
   
-            // Change circle color based on button selected
-            // svgCircles.forEach(circle => circle.setAttribute('fill', index === 0 ? '#FFFFFF' : '#3498DB')); // Change fill color of circles based on button selected
-  
+            // Change circle color and scale based on button selected
+            svgCircles.forEach((circle, circleIndex) => {
+                if (circleIndex <= index) {
+                    gsap.to(circle, {
+                        fill: '#3498DB',
+                        scale: 1.5,
+                        transformOrigin: 'center center',
+                        duration: 0.5,
+                        ease: 'power2.inOut'
+                    });
+                } else {
+                    gsap.to(circle, {
+                        fill: 'white',
+                        scale: 1,
+                        transformOrigin: 'center center',
+                        duration: 0.5,
+                        ease: 'power2.inOut'
+                    });
+                }
+            });
+
             // Hide all cards first
             let hidePromises = [];
             tlCards.forEach(card => {
@@ -87,5 +105,4 @@ document.addEventListener("DOMContentLoaded", function() {
     // Show the first week's content by default
     const firstWeekButton = document.querySelector('.week-item[data-week="div1"]');
     firstWeekButton.click();
-  });
-  
+});
