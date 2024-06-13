@@ -1,0 +1,139 @@
+#page5{
+    height: 210vh;
+    width: 100%;
+    background-color: #D9E4EC;
+}
+
+.expert-sessions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.speaker-title{
+    margin-top: 4rem;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+    font-size: 5rem;
+    font-weight: 500;
+    text-align: left;
+    align-self: flex-start;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #26AE60;
+}
+
+.speaker-inner-title{
+    margin-top: 3rem;
+    margin-left: 5rem;
+    font-size: 5rem;
+    font-weight: 500;
+    text-align: left;
+    align-self: flex-start;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #26AE60;
+    margin-bottom: 2rem;
+}
+
+/* SPEAKER CARDS  */
+.speaker-cards{     
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 3rem;
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+    width: 100%;
+    background-color: #2C3E50;
+    border-radius: 2rem;
+}
+
+.speaker-card-stack-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.speaker-card-stack-2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.es-speaker-name{    
+    font-size: 1.3rem;
+}
+
+/* MENTOR CARDS  */
+.mentor-cards{   
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 3vh;
+    margin-top: 2vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* max-height: 40vh; */
+    width: 100%;
+    background-color: #2C3E50;
+    border-radius: 2rem;
+}
+
+.mentor-card-stack-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mentor-card-stack-2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.es-mentor-name{
+    font-size: 1.3rem;   
+     
+}
+
+
+.es-card{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: space-evenly;
+    margin: 1rem;    
+    border-style: solid;
+    border-radius: 2rem;
+    color: #D9E4EC;
+    border-color: #26AE60;
+    background-color: transparent;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.es-card:hover{
+    border-color: #2880B9;
+    transform: translateY(5px);
+    color: #26AE60;
+    box-shadow: 0 8px 12px rgba(52, 152, 219, 0.5);
+}
+
+.es-card img{
+    width: 70%;
+    height: 70%;
+    transform-origin: center;
+    border-radius: 1rem;
+}
+

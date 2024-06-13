@@ -24,7 +24,7 @@
 }
 
 .ap-title-container h2 {
-    margin-top: 8rem;
+    margin-top: 3rem;
     margin-left: 5rem;
     font-size: 5rem;
     font-weight: 500;
@@ -76,6 +76,7 @@
     border-radius: 1rem;
     border-color: #2880B9;   
     width: 86%;
+    padding: 2rem 0;
 }
 
 .card {
