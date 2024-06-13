@@ -8,15 +8,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* box-shadow: 0 0px 12px rgba(40, 128, 185, 0.5) inset; */
 }
 
 #about-program {
     padding-left: 8rem;
     padding-right: 8rem;
-} 
+}
 
-.ap-title-container{
+.ap-title-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,14 +32,12 @@
     color: #26AE60;
 }
 
-/* 9 weeks */
 .card-text-highlight {
     font-size: 1.75rem;
-    font-family: 'Fira Sans', sans-serif;    
+    font-family: 'Fira Sans', sans-serif;
 }
 
-/* Duration Style  */
-.ap-duration {    
+.ap-duration {
     margin-top: 8rem;
     margin-left: 5rem;
     color: #444;
@@ -60,21 +57,21 @@
 
 .about-program-content p {
     text-align: justify;
-    font-size: 1.75rem; /* 30px */
-    line-height: 3rem; /* 36px */
-    margin-bottom: 0.75rem; /* 12px */
+    font-size: 1.75rem;
+    line-height: 3rem;
+    margin-bottom: 0.75rem;
 }
 
 .about-program-card-stack {
     display: flex;
     flex-direction: column;
-    font-size: 1.75rem; 
-    font-family: 'Fira Sans', sans-serif; 
-    margin-top: 4rem;  
-    margin-left: 5rem; 
+    font-size: 1.75rem;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 4rem;
+    margin-left: 5rem;
     background-color: #2880B9;
     border-radius: 1rem;
-    border-color: #2880B9;   
+    border-color: #2880B9;
     width: 86%;
     padding: 2rem 0;
 }
@@ -82,12 +79,12 @@
 .card {
     display: flex;
     flex-direction: row;
-    justify-content: start;    
+    justify-content: start;
     align-items: center;
     text-align: center;
-    margin: .5rem 0;   
-    padding: .2rem 3rem;  
-    color: #D9E4EC; 
+    margin: .5rem 0;
+    padding: .2rem 3rem;
+    color: #D9E4EC;
     font-style: italic;
 }
 
@@ -97,27 +94,84 @@
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700;
     font-style: normal;
-    margin-right: .5rem;   
-     
+    margin-right: .5rem;
 }
-.card-text-long {    
+
+.card-text-long {
     color: #D9E4EC;
     text-align: center;
     white-space: nowrap;
 }
 
-.ruler-middle{
-    border-top: 2px solid #2880B9; 
-    width: 86%;  
-    margin-left: 5rem; 
+.ruler-middle {
+    border-top: 2px solid #2880B9;
+    width: 86%;
+    margin-left: 5rem;
     margin-top: 2rem;
-
 }
 
-.ruler-end{
-    border-top: 2px solid #2880B9; 
-    width: 60%;    
+.ruler-end {
+    border-top: 2px solid #2880B9;
+    width: 60%;
     margin: 5rem auto;
 }
 
+@media (min-width: 481px) and (max-width: 1024px) {
+    #about-program {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
+    .ap-title-container {
+        padding-right: 1rem;
+    }
+
+    .ap-title-container h2 {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-size: 3rem; /* Adjust this size as needed */
+    }
+
+    .card-text-highlight {
+        font-size: 1.2rem; /* Adjust this size as needed */
+    }
+
+    .ap-duration {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-size: 1.2rem; /* Adjust this size as needed */
+    }
+
+    .about-program-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .about-program-content p {
+        font-size: 1.2rem; /* Adjust this size as needed */
+        line-height: 2rem; /* Adjust this size as needed */
+    }
+
+    .about-program-card-stack {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-size: 1.2rem; /* Adjust this size as needed */
+        width: 90%;
+        padding: 1rem 0;
+    }
+
+    .card-title {
+        font-size: 1.2rem; /* Adjust this size as needed */
+    }
+
+    .ruler-middle {
+        width: 90%;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .ruler-end {
+        width: 90%;
+        margin: 1rem auto;
+    }
+}
