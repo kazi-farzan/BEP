@@ -1,7 +1,7 @@
 /* ABOUT PAGE  */
 
 #page6 {  
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   background-color: #2ECC71;
   display: flex;
@@ -20,6 +20,7 @@
 }
 
 #about-us h2{  
+  /* padding-left: 3rem; */
   margin-top: 7rem;
   font-size: 5rem;
   font-weight: 500;
@@ -28,9 +29,31 @@
   color: #D9E4EC;
 }
 
-.learn-more{
+.about-us-email{
   color: white;
-  padding-left: 5rem;
+  /* padding-left: 5rem; */
+  padding-right: 10rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.about-us-email a{
+  color: #2880B9;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.about-us-email a:hover{
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+
+.learn-more{
+  margin-top: 2rem;
+  color: white;
+  /* padding-left: 5rem; */
   padding-right: 10rem;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
