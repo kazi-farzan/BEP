@@ -1,4 +1,4 @@
-/* DOMAIN PAGE  */
+/* DOMAIN PAGE */
 
 #page3 {
   height: 100vh;
@@ -7,16 +7,15 @@
   background-color: #D9E4EC;
   display: flex;
   flex-direction: column;
-  justify-content:space-evenly;
-  /* padding: 0 10rem;   */
+  justify-content: space-evenly;
 }
 
-.domains{
+.domains {
   display: flex;
   flex-direction: column;
 }
 
-.domain-title{
+.domain-title {
   margin-top: 3rem;
   margin-left: 5rem;
   padding: 0 10rem;
@@ -31,49 +30,65 @@
 .box-small {
   height: 300px;
   width: 100%;
-  color: #26AE60;
+  max-width: 25rem;
+  min-width: 25rem;
+  color: #111;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
   padding: 2rem;
+  background-color: #111;
+  transition: all .5s ease;
+  border-color: #26AE60;
+  border-width: 2px;
+  border-radius: 2rem;
+  border-style: solid;
+  margin: 2rem;
 }
 
-.svg-box{
+.box-small:hover {
+  transform: translateY(-5px);
+  border-color: #2880B9;
+  box-shadow: 0 13px 20px rgba(52, 152, 219, 0.5);
+}
+
+.box-small:hover .domain-svg {
+  fill: #2880B9;
+}
+
+.box-small:hover h4 {
+  color: #2880B9;
+}
+
+.svg-box {
+  display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%; /* Ensure the SVG box takes full width */
+  margin-left: 3rem;
 }
 
-.box-small h4{  
-  font-size: 2.25rem;
-  font-weight: 300;
+.box-small h4 {
+  font-size: 2rem;
+  font-weight: 400;
   text-align: center;
   white-space: nowrap;
-  margin-top: 3rem;
+  margin-top: 1rem; /* Adjust margin as needed */
   padding-right: 2.5rem;
-}
-
-.domain-svg{
-  align-items: center;
+  color: #D9E4EC;
   transition: all 0.5s ease;
-  width: 200px;;
-  height:150%;
-  fill:#26AE60;
+  margin-left: 2rem;
 }
 
-/* .svg-alt-color{
+.domain-svg {
+  transition: all 0.5s ease;
+  width: 200px;
+  height: auto;
   fill: #26AE60;
-} */
-
-.domain-svg:hover{
-  fill:#3498DB;  
 }
 
-/* .svg-alt-color:hover{
-  fill: #3498DB;
-} */
-
-/* GRID LAYOUT  */
+/* GRID LAYOUT */
 
 #grid1 {
   margin-top: 2rem;
@@ -87,6 +102,5 @@
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
-   
